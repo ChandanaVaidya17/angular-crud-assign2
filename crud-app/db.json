@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "coursename": "angularjs",
+      "mentorname": "yajnesh",
+      "email": "yajnesh@gmail.com",
+      "dob": "2023-09-13T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "coursename": "reactjs",
+      "mentorname": "vijay",
+      "email": "vijay@gmail.com",
+      "dob": "2023-09-19T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "coursename": "firebase 5",
+      "mentorname": "gfg",
+      "email": "gfg@gmail.com",
+      "dob": "2023-09-19T18:30:00.000Z",
+      "id": 4
+    }
+  ]
+}

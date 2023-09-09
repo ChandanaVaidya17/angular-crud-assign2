@@ -1,0 +1,37 @@
+<div mat-dialog-title>
+<h2>NEW COURSE</h2>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label >Course Name</mat-label>
+            <input matInput type="text" placeholder="Course name" formControlName="coursename">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label >Mentor Name</mat-label>
+            <input matInput type="text" placeholder="Course name" formControlName="mentorname">
+          </mat-form-field>
+          
+    </div>
+    <hr><br>
+    <div class="row" >
+        <mat-form-field appearance="outline">
+            <mat-label >Email</mat-label>
+            <input matInput type="email" placeholder="abc@gmail.com" formControlName="email">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Available from</mat-label>
+            <input matInput [matDatepicker]="picker" placeholder ="MM/DD/YYYY" formControlName="dob">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          
+    </div>
+
+</div>
+<div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false"> Cancel</button>
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Edit':'Save'}}</button>
+</div>
+</form>
